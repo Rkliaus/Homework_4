@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.price {
+    background-color:  #F5F5F5;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+   
+}
+
+.container_price__header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.container_price__header h2 {
+    color: #000;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 42px 0;
+}
+
+.container_price__header:after{
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 1px;
+    background-color: #EC7979;
+    bottom: 0;
+}
+
+
+.container_price__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #86878B;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container_price__content p{
+    padding: 0;
+    margin-bottom: 79px;
+}
+
+.price__list {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    gap: 31px;
+}
+
+.price_el {
+    margin: 10px auto;
+    background: #FFF;
+    width: 370px;
+    max-width: 100%;
+}
+
+.price_el li {
+    padding: 15px;
+    border: 2px solid #F5F5F5;
+    list-style-type: none;
+}
+
+.optima li:nth-child(-n+3), .pro li:nth-child(-n+3), .basic li:nth-child(-n+3){
+    background-color: #333333;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.optima li:nth-child(3), .pro li:nth-child(3), .basic li:nth-child(3) {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.optima li:first-child, .pro li:first-child, .basic li:first-child{
+font-family: 'Open Sans';
+font-size: 24px;
+text-transform: capitalize;
+}
+
+.price_el:hover {
+    margin-bottom: 80px;
+    margin-top: -80px;
+    transition: 0.6s;
+
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 150, 240, 0.2);
+-moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
